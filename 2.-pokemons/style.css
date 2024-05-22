@@ -92,8 +92,10 @@ body {
     height: 180vh;
   }
 }
-  @media (max-height: 540px) {
+
+@media (max-height: 540px) {
     .imagenes-container{
       height: 220vh;
     }
 }
+
