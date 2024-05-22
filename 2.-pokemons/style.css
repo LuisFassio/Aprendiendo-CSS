@@ -91,11 +91,13 @@ body {
     flex-direction: column;
     height: 180vh;
   }
+
+    @media (max-height: 540px) {
+      .imagenes-container{
+        height: 220vh;
+      }
+  }
+
 }
 
-@media (max-height: 540px) {
-    .imagenes-container{
-      height: 220vh;
-    }
-}
 
