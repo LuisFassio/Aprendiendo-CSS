@@ -1,0 +1,97 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    background-color: #1c56a8;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.contenedor .sub-contenedor{
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+
+    box-shadow: 0 5px 15px rgba(63, 215, 253, 0.7);
+}
+
+.sub-contenedor .contenido{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: 1
+}
+
+.contenido .icon{
+    margin-right: 10px;
+}
+
+.contenido .mensaje .title{
+    font-weight: bold;
+}
+
+.sub-contenedor .actions{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: end;
+    gap: 10px;
+}
+
+.actions button{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.actions .btn-descargar{
+    background-color: #0280DE;
+    color: white;
+}
+
+
+.actions .btn-descargar:hover{
+    background-color: #0280DE;
+}
+
+.actions .btn-descargar:focus{
+    background-color: #45aae4;
+}
+
+.actions .btn-volver{
+    background-color:  white;
+    border: solid 1px #ccc;
+}
+
+.btn-volver:hover{
+    background-color:  #eee;
+}
+
+@media (max-width: 680px) {
+    .contenedor .sub-contenedor{
+        width: 80% ;
+
+    }
+    .actions{
+        flex-direction: column;
+    }
+}
